@@ -3,6 +3,1064 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sak Graphics | Graphic Designer in Muscat, Oman</title>
+    <meta
+      name="description"
+      content="Sak Graphics is a professional graphic design brand in Muscat, Oman, offering logo design, branding, social media design, business cards, brochures, posters, banners, and creative marketing designs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #07080d;
+        --paper: #f7f3ea;
+        --cream: #fffaf0;
+        --soft-blue: #eef8fb;
+        --orange: #ff6a1a;
+        --orange-dark: #d14f12;
+        --gold: #ffc857;
+        --cyan: #31d7ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        border: 0;
+        cursor: pointer;
+      }
+
+      section {
+        scroll-margin-top: 92px;
+      }
+
+      .wrap {
+        width: min(1280px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 50;
+        border-bottom: 1px solid rgba(7, 8, 13, 0.1);
+        background: rgba(247, 243, 234, 0.92);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav-inner {
+        display: flex;
+        min-height: 78px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .mark {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--orange), var(--gold) 55%, var(--cyan));
+        color: var(--ink);
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-weight: 800;
+      }
+
+      .brand strong {
+        display: block;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-size: 1.12rem;
+        line-height: 1;
+      }
+
+      .brand span span {
+        display: block;
+        margin-top: 4px;
+        color: rgba(7, 8, 13, 0.55);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        color: rgba(7, 8, 13, 0.68);
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .links a:hover {
+        color: var(--ink);
+      }
+
+      .menu {
+        display: none;
+        width: 42px;
+        height: 42px;
+        place-content: center;
+        gap: 5px;
+        border: 1px solid rgba(7, 8, 13, 0.14);
+        border-radius: 8px;
+        background: transparent;
+      }
+
+      .menu span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--ink);
+      }
+
+      .mobile-menu {
+        display: none;
+        padding: 0 20px 18px;
+      }
+
+      .mobile-menu a {
+        display: block;
+        border-bottom: 1px solid rgba(7, 8, 13, 0.08);
+        padding: 14px 0;
+        color: rgba(7, 8, 13, 0.78);
+        font-weight: 800;
+      }
+
+      .btn {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 0 20px;
+        font-weight: 900;
+        transition: transform 180ms ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-small {
+        min-height: 40px;
+        padding: 0 16px;
+      }
+
+      .primary {
+        background: linear-gradient(135deg, var(--orange), var(--gold));
+        color: var(--ink);
+        box-shadow: 0 18px 45px rgba(255, 106, 26, 0.22);
+      }
+
+      .secondary {
+        border: 1px solid rgba(7, 8, 13, 0.18);
+        background: rgba(255, 255, 255, 0.62);
+        color: var(--ink);
+      }
+
+      .ghost {
+        border: 1px solid rgba(49, 215, 255, 0.55);
+        color: #08708a;
+      }
+
+      .hero {
+        overflow: hidden;
+        padding: 138px 0 72px;
+        background:
+          radial-gradient(circle at 18% 18%, rgba(255, 200, 87, 0.45), transparent 30%),
+          radial-gradient(circle at 84% 12%, rgba(49, 215, 255, 0.24), transparent 26%),
+          linear-gradient(180deg, var(--cream) 0%, var(--paper) 62%, var(--soft-blue) 100%);
+      }
+
+      .hero-grid {
+        display: grid;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--orange-dark);
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(3rem, 7.2vw, 5.6rem);
+        line-height: 0.95;
+      }
+
+      h2 {
+        font-size: clamp(2.15rem, 5.6vw, 4.4rem);
+        line-height: 0.98;
+      }
+
+      h3 {
+        font-size: 1.24rem;
+        line-height: 1.18;
+      }
+
+      .copy,
+      .hero-text {
+        max-width: 720px;
+        color: rgba(7, 8, 13, 0.66);
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .hero-text {
+        margin: 22px 0 30px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .hero-visual {
+        position: relative;
+        min-height: 560px;
+      }
+
+      .design-card {
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid rgba(7, 8, 13, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 28px 80px rgba(7, 8, 13, 0.14);
+        padding: 24px;
+      }
+
+      .design-card::after {
+        content: "";
+        position: absolute;
+        inset: auto -20% -30% 20%;
+        height: 90px;
+        background: linear-gradient(90deg, var(--orange), var(--gold), var(--cyan));
+        transform: rotate(-8deg);
+      }
+
+      .design-card span,
+      .portfolio-content p {
+        color: var(--orange-dark);
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .design-card strong,
+      .design-card small {
+        position: relative;
+        z-index: 1;
+        display: block;
+      }
+
+      .design-card strong {
+        margin-top: 12px;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-size: 2rem;
+        line-height: 1;
+      }
+
+      .large {
+        left: 6%;
+        top: 20px;
+        width: 74%;
+        min-height: 285px;
+      }
+
+      .social {
+        right: 2%;
+        top: 338px;
+        width: 42%;
+        min-height: 168px;
+      }
+
+      .print {
+        left: 0;
+        top: 376px;
+        width: 45%;
+        min-height: 168px;
+      }
+
+      .badge {
+        position: absolute;
+        right: 20%;
+        bottom: 0;
+        border: 1px solid rgba(7, 8, 13, 0.12);
+        border-radius: 8px;
+        background: #ffffff;
+        padding: 16px;
+      }
+
+      .badge span {
+        display: block;
+        margin-top: 4px;
+        color: rgba(7, 8, 13, 0.62);
+      }
+
+      .section {
+        padding: 90px 0;
+      }
+
+      .alt {
+        background: var(--soft-blue);
+      }
+
+      .header {
+        max-width: 760px;
+      }
+
+      .center {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .header h2 {
+        margin-bottom: 18px;
+      }
+
+      .grid2 {
+        display: grid;
+        gap: 42px;
+      }
+
+      .panel,
+      .card,
+      .contact-form {
+        border: 1px solid rgba(7, 8, 13, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 18px 60px rgba(7, 8, 13, 0.07);
+      }
+
+      .panel {
+        padding: 28px;
+      }
+
+      .facts,
+      .services,
+      .portfolio,
+      .process,
+      .testimonials,
+      .reasons {
+        display: grid;
+        gap: 18px;
+      }
+
+      .facts {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        margin-top: 18px;
+      }
+
+      .fact,
+      .reason {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        border: 1px solid rgba(7, 8, 13, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 16px;
+        color: rgba(7, 8, 13, 0.76);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        margin-top: 7px;
+        border-radius: 50%;
+        background: var(--orange);
+        flex: 0 0 auto;
+      }
+
+      .pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .pill {
+        border: 1px solid rgba(7, 8, 13, 0.12);
+        border-radius: 999px;
+        padding: 8px 12px;
+        color: rgba(7, 8, 13, 0.72);
+        font-size: 0.88rem;
+      }
+
+      .services {
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+        margin-top: 44px;
+      }
+
+      .card {
+        padding: 22px;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 200, 87, 0.62);
+        background: #ffffff;
+      }
+
+      .icon {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        margin-bottom: 22px;
+        border-radius: 8px;
+        background: var(--ink);
+        color: #ffffff;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-weight: 900;
+      }
+
+      .card p,
+      .project span,
+      .testimonial p {
+        color: rgba(7, 8, 13, 0.62);
+        line-height: 1.65;
+      }
+
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 34px 0;
+      }
+
+      .filters button {
+        border: 1px solid rgba(7, 8, 13, 0.13);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.62);
+        padding: 10px 14px;
+        color: rgba(7, 8, 13, 0.68);
+        font-weight: 900;
+      }
+
+      .filters button.active,
+      .filters button:hover {
+        border-color: rgba(255, 200, 87, 0.62);
+        background: rgba(255, 106, 26, 0.17);
+        color: var(--ink);
+      }
+
+      .portfolio {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .project {
+        overflow: hidden;
+        padding: 0;
+      }
+
+      .portfolio-art {
+        display: grid;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        place-items: center;
+        background:
+          linear-gradient(135deg, rgba(255, 106, 26, 0.82), rgba(255, 200, 87, 0.82) 48%, rgba(49, 215, 255, 0.7)),
+          #ffffff;
+        color: var(--ink);
+      }
+
+      .portfolio-art span {
+        border: 2px solid rgba(7, 8, 13, 0.35);
+        border-radius: 8px;
+        padding: 18px 22px;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .portfolio-content {
+        padding: 20px;
+      }
+
+      .portfolio-content h3 {
+        margin: 7px 0 10px;
+      }
+
+      .text-link {
+        display: inline-block;
+        margin-top: 16px;
+        color: #08708a;
+        font-weight: 900;
+      }
+
+      .process,
+      .testimonials {
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        margin-top: 44px;
+      }
+
+      .num {
+        display: inline-block;
+        margin-bottom: 30px;
+        color: var(--orange);
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+
+      .reasons {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .reason b {
+        color: #08708a;
+      }
+
+      .testimonial b {
+        display: block;
+        margin-top: 18px;
+        color: var(--orange-dark);
+      }
+
+      .contact {
+        background:
+          linear-gradient(135deg, rgba(255, 106, 26, 0.16), transparent 42%),
+          var(--cream);
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 12px;
+        margin-top: 28px;
+        color: rgba(7, 8, 13, 0.7);
+      }
+
+      .contact-form {
+        display: grid;
+        gap: 16px;
+        padding: 24px;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        color: rgba(7, 8, 13, 0.72);
+        font-size: 0.9rem;
+        font-weight: 900;
+      }
+
+      .contact-form input,
+      .contact-form select,
+      .contact-form textarea {
+        width: 100%;
+        border: 1px solid rgba(7, 8, 13, 0.13);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.82);
+        color: var(--ink);
+        padding: 14px;
+        outline: none;
+      }
+
+      .note {
+        margin: 0;
+        color: rgba(7, 8, 13, 0.58);
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: #000000;
+        color: var(--paper);
+        padding: 40px 0;
+      }
+
+      .footer-row {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 20px;
+        color: rgba(247, 243, 234, 0.72);
+      }
+
+      .copyright {
+        margin-top: 28px;
+        color: rgba(247, 243, 234, 0.45);
+        font-size: 0.9rem;
+      }
+
+      .wa {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 40;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        background: #25d366;
+        color: #07140b;
+        padding: 10px 16px 10px 10px;
+        font-weight: 900;
+        box-shadow: 0 18px 50px rgba(37, 211, 102, 0.25);
+      }
+
+      .wa span {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      @media (min-width: 760px) {
+        .contact-form {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .wide {
+          grid-column: span 2;
+        }
+
+        .footer-row {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      @media (min-width: 980px) {
+        .hero-grid {
+          grid-template-columns: 1fr 0.78fr;
+        }
+
+        .grid2 {
+          grid-template-columns: 0.9fr 1.1fr;
+        }
+
+        .contact-grid {
+          grid-template-columns: 0.85fr 1.15fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .links {
+          display: none;
+        }
+
+        .menu {
+          display: grid;
+        }
+
+        .mobile-menu.open {
+          display: block;
+        }
+
+        .hero {
+          padding-top: 112px;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 16vw, 4.8rem);
+        }
+
+        .actions .btn {
+          width: 100%;
+        }
+
+        .hero-visual {
+          min-height: 650px;
+        }
+
+        .large {
+          left: 6%;
+          top: 0;
+          width: 82%;
+        }
+
+        .social {
+          right: 0;
+          top: 325px;
+          width: 55%;
+        }
+
+        .print {
+          left: 0;
+          top: 500px;
+          width: 58%;
+        }
+
+        .design-card strong {
+          font-size: 1.55rem;
+        }
+
+        .section {
+          padding: 72px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#home" aria-label="Sak Graphics home">
+          <span class="mark">SG</span>
+          <span><strong>Sak Graphics</strong><span>Your Designing Partner</span></span>
+        </a>
+        <button class="menu" id="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+        <nav class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+          <a class="btn btn-small primary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
+        </nav>
+      </div>
+      <nav class="mobile-menu" id="mobile">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">Graphic Design in Muscat, Oman</p>
+            <h1>Creative Graphic Design That Helps Your Brand Stand Out</h1>
+            <p class="hero-text">
+              Sak Graphics is a Muscat-based graphic design brand helping businesses build strong visual identities
+              through logo design, branding, social media creatives, print designs, and marketing materials.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="#portfolio">View Portfolio</a>
+              <a class="btn secondary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Contact on WhatsApp</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Sak Graphics visual preview">
+            <div class="design-card large"><span>Brand</span><strong>Sak Graphics</strong><small>Identity / Print / Digital</small></div>
+            <div class="design-card social"><span>Post</span><strong>Social Media</strong></div>
+            <div class="design-card print"><span>Print</span><strong>Ready Artwork</strong></div>
+            <div class="badge"><strong>Fast contact</strong><span>+968 9720 2396</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="wrap grid2">
+          <div class="header">
+            <p class="eyebrow">About</p>
+            <h2>A senior designer for ambitious business visuals</h2>
+            <p class="copy">
+              Sak Graphics is a creative design brand based in Muscat, Oman, focused on professional visual design for
+              businesses, brands, campaigns, and individuals.
+            </p>
+          </div>
+          <div>
+            <div class="panel">
+              <p class="copy">
+                Led by Sajid Ali Khan, Sak Graphics brings senior-level graphic design thinking to branding, logo
+                design, social media creatives, business cards, posters, brochures, banners, packaging visuals, and
+                marketing materials. The brand is positioned for businesses that want confident, clean, and creative
+                designs, and Sajid is ready to take up challenging design work across different industries.
+              </p>
+            </div>
+            <div class="facts">
+              <div class="fact"><span class="dot"></span>Based in Muscat, Oman</div>
+              <div class="fact"><span class="dot"></span>Available for freelance and business projects</div>
+              <div class="fact"><span class="dot"></span>Specialized in branding, digital design, and print design</div>
+              <div class="fact"><span class="dot"></span>Fast communication through WhatsApp</div>
+            </div>
+            <div class="panel" style="margin-top: 18px">
+              <strong>Professional strengths</strong>
+              <div class="pills">
+                <span class="pill">Senior graphic designer for commercial, digital, and print design</span>
+                <span class="pill">Ready for challenging business and brand requirements</span>
+                <span class="pill">Brand visuals, campaigns, and print production</span>
+                <span class="pill">Corel Draw, creative layouts, and print-ready artwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="services">
+        <div class="wrap">
+          <div class="header center">
+            <p class="eyebrow">Services</p>
+            <h2>Design services for digital and print</h2>
+            <p class="copy">Clear, polished visuals for businesses that need to look professional across every customer touchpoint.</p>
+          </div>
+          <div class="services" id="servicesGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio">
+        <div class="wrap">
+          <div class="header center">
+            <p class="eyebrow">Portfolio</p>
+            <h2>Selected work categories with direct Behance access</h2>
+            <p class="copy">
+              To keep the website fast and easy to maintain, each category links visitors to the full Behance portfolio
+              instead of loading heavy project images on the homepage.
+            </p>
+          </div>
+          <div class="filters" id="filters" aria-label="Portfolio filters"></div>
+          <div class="portfolio" id="portfolioGrid"></div>
+        </div>
+      </section>
+
+      <section class="section alt" id="process">
+        <div class="wrap">
+          <div class="header center">
+            <p class="eyebrow">Process</p>
+            <h2>A simple workflow from idea to final files</h2>
+            <p class="copy">A clear process helps every project move smoothly and keeps feedback easy for clients.</p>
+          </div>
+          <div class="process">
+            <article class="card"><span class="num">01</span><h3>Discuss Requirement</h3><p>Client shares business details, design requirement, references, and deadline.</p></article>
+            <article class="card"><span class="num">02</span><h3>Concept and Direction</h3><p>Sak Graphics prepares the creative direction, style, and initial design concept.</p></article>
+            <article class="card"><span class="num">03</span><h3>Design and Revision</h3><p>Designs are created and revised based on client feedback.</p></article>
+            <article class="card"><span class="num">04</span><h3>Final Delivery</h3><p>Final files are delivered in required formats for digital or print use.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap grid2">
+          <div class="header">
+            <p class="eyebrow">Why Choose Sak Graphics</p>
+            <h2>Professional design with practical delivery</h2>
+            <p class="copy">The website is built to convert visitors into conversations by making services, portfolio, and contact options easy to scan.</p>
+          </div>
+          <div class="reasons">
+            <div class="reason"><b>✓</b>Creative and business-focused designs</div>
+            <div class="reason"><b>✓</b>Fast response through WhatsApp</div>
+            <div class="reason"><b>✓</b>Professional digital and print design experience</div>
+            <div class="reason"><b>✓</b>Clean and modern design style</div>
+            <div class="reason"><b>✓</b>Suitable for startups, small businesses, and established brands</div>
+            <div class="reason"><b>✓</b>Final artwork ready for social media or printing</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrap">
+          <div class="header center">
+            <p class="eyebrow">Client Feedback</p>
+            <h2>Ready for real testimonials</h2>
+            <p class="copy">No fake names or fake reviews are used. Add verified feedback here when clients approve it.</p>
+          </div>
+          <div class="testimonials">
+            <article class="card testimonial"><p>"Client testimonial can be added here."</p><b>Client name / company can be added here.</b></article>
+            <article class="card testimonial"><p>"Client testimonial can be added here."</p><b>Client name / company can be added here.</b></article>
+            <article class="card testimonial"><p>"Client testimonial can be added here."</p><b>Client name / company can be added here.</b></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="wrap grid2 contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let's Create Something Creative Together</h2>
+            <p class="copy">Have a design requirement? Contact Sak Graphics for logo design, branding, social media creatives, print designs, and more.</p>
+            <div class="contact-list">
+              <a href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
+              <a href="mailto:sajid030095@gmail.com">Email: sajid030095@gmail.com</a>
+              <span>Location: Muscat, Oman</span>
+            </div>
+            <div class="actions" style="margin-top: 28px">
+              <a class="btn primary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+              <a class="btn secondary" href="mailto:sajid030095@gmail.com">Send Email</a>
+              <a class="btn ghost" href="https://www.behance.net/sajidalikhan1" target="_blank" rel="noreferrer">View Behance</a>
+            </div>
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('This preview form is not connected yet. On final hosting it can be connected to a form service.');">
+            <div><label for="name">Name</label><input id="name" placeholder="Your name" required /></div>
+            <div><label for="phone">Phone / WhatsApp</label><input id="phone" placeholder="+968..." required /></div>
+            <div><label for="email">Email</label><input id="email" placeholder="you@example.com" /></div>
+            <div>
+              <label for="service">Service Required</label>
+              <select id="service">
+                <option>Logo Design</option>
+                <option>Brand Identity Design</option>
+                <option>Social Media Design</option>
+                <option>Business Card Design</option>
+                <option>Flyers and Posters</option>
+                <option>Brochure and Catalogue Design</option>
+                <option>Banner and Signage Design</option>
+              </select>
+            </div>
+            <div class="wide"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell us about your project"></textarea></div>
+            <p class="note wide">Preview form only. Final website can connect to Netlify Forms, Formspree, EmailJS, or another form service.</p>
+            <button class="btn primary wide" type="submit">Submit Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-row">
+        <div><h3>Sak Graphics</h3><p>Your Designing Partner</p></div>
+        <div class="footer-links">
+          <a href="https://wa.me/96897202396" target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
+          <a href="mailto:sajid030095@gmail.com">sajid030095@gmail.com</a>
+          <span>Muscat, Oman</span>
+          <a href="https://www.behance.net/sajidalikhan1" target="_blank" rel="noreferrer">Behance</a>
+          <a href="https://www.instagram.com/sakgraphis90" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="wrap"><p class="copyright">© 2026 Sak Graphics. All rights reserved.</p></div>
+    </footer>
+
+    <a class="wa" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer"><span>WA</span>Chat</a>
+
+    <script>
+      const behance = "https://www.behance.net/sajidalikhan1";
+      const services = [
+        ["LG", "Logo Design", "Unique and professional logos for businesses, startups, and personal brands."],
+        ["BI", "Brand Identity Design", "Colors, typography, stationery, and visual direction for a consistent brand style."],
+        ["SM", "Social Media Design", "Instagram posts, Facebook posts, stories, ads, banners, and campaign creatives."],
+        ["BC", "Business Card Design", "Professional business card designs prepared clearly for print production."],
+        ["FP", "Flyers and Posters", "Promotional flyers and posters for offers, events, launches, and campaigns."],
+        ["BR", "Brochure and Catalogue Design", "Clean layouts for company profiles, product catalogues, and marketing documents."],
+        ["BN", "Banner and Signage Design", "Outdoor banners, shop signs, roll-up banners, and display materials."],
+        ["PK", "Packaging and Label Design", "Product labels, packaging visuals, and presentation-focused product graphics."],
+        ["TS", "T-Shirt and Merchandise Design", "Creative t-shirt graphics and merchandise artwork for brands and campaigns."],
+        ["PR", "Print-Ready Artwork", "Final files prepared with proper size, bleed, color mode, and resolution."]
+      ];
+      const items = [
+        ["Logo Design Showcase", "Logo Design", "Explore logo marks and visual identity work on Behance.", "Logo"],
+        ["Brand Identity Layout", "Branding", "Explore brand direction, colors, stationery, and visual system projects.", "Brand"],
+        ["Social Media Campaign", "Social Media", "Explore social media creatives, promotional visuals, and ad layouts.", "Social"],
+        ["Poster Design Collection", "Posters", "Explore event, offer, launch, and campaign poster artwork.", "Poster"],
+        ["Business Card Concepts", "Business Cards", "Explore professional business card and stationery samples.", "Cards"],
+        ["Brochure and Catalogue Layout", "Brochures", "Explore company profile, catalogue, and marketing document layouts.", "Book"],
+        ["Banner and Signage Artwork", "Banners", "Explore shop signs, roll-up banners, and outdoor campaign materials.", "Banner"],
+        ["Packaging and Label Visuals", "Packaging", "Explore product labels, packaging visuals, and display-ready artwork.", "Pack"],
+        ["Merchandise Artwork", "Merchandise", "Explore t-shirt graphics and merchandise artwork.", "Merch"]
+      ];
+      const categories = ["All", "Logo Design", "Branding", "Social Media", "Posters", "Business Cards", "Brochures", "Banners", "Packaging", "Merchandise", "Other Works"];
+      const servicesGrid = document.getElementById("servicesGrid");
+      const filters = document.getElementById("filters");
+      const portfolioGrid = document.getElementById("portfolioGrid");
+      let active = "All";
+
+      servicesGrid.innerHTML = services
+        .map((service) => `<article class="card"><div class="icon">${service[0]}</div><h3>${service[1]}</h3><p>${service[2]}</p></article>`)
+        .join("");
+
+      function renderPortfolio() {
+        filters.innerHTML = categories
+          .map((category) => `<button class="${category === active ? "active" : ""}" data-category="${category}">${category}</button>`)
+          .join("");
+
+        const visible = active === "All" ? items : items.filter((item) => item[1] === active);
+        portfolioGrid.innerHTML = visible
+          .map(
+            (item) => `
+              <article class="card project">
+                <a class="portfolio-art" href="${behance}" target="_blank" rel="noreferrer"><span>${item[3]}</span></a>
+                <div class="portfolio-content">
+                  <p>${item[1]}</p>
+                  <h3>${item[0]}</h3>
+                  <span>${item[2]}</span>
+                  <a class="text-link" href="${behance}" target="_blank" rel="noreferrer">View on Behance</a>
+                </div>
+              </article>
+            `
+          )
+          .join("");
+      }
+
+      filters.addEventListener("click", (event) => {
+        const category = event.target.dataset.category;
+        if (!category) return;
+        active = category;
+        renderPortfolio();
+      });
+
+      document.getElementById("menu").addEventListener("click", () => {
+        document.getElementById("mobile").classList.toggle("open");
+      });
+
+      document.getElementById("mobile").addEventListener("click", () => {
+        document.getElementById("mobile").classList.remove("open");
+      });
+
+      renderPortfolio();
+    </script>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sak Graphics Updated Preview</title>
     <style>
       body {
