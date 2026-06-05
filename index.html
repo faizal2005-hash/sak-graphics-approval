@@ -503,6 +503,81 @@
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       }
 
+      .portfolio-direct {
+        display: grid;
+        gap: 28px;
+        align-items: stretch;
+        max-width: 980px;
+        margin: 42px auto 0;
+        border: 1px solid rgba(7, 8, 13, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 18px 60px rgba(7, 8, 13, 0.07);
+      }
+
+      .portfolio-direct-art {
+        position: relative;
+        min-height: 320px;
+        overflow: hidden;
+        padding: 28px;
+        background:
+          linear-gradient(135deg, rgba(255, 106, 26, 0.88), rgba(255, 200, 87, 0.84) 48%, rgba(49, 215, 255, 0.76)),
+          #ffffff;
+        color: var(--ink);
+      }
+
+      .portfolio-direct-art::after {
+        content: "";
+        position: absolute;
+        inset: auto -15% -22% 18%;
+        height: 140px;
+        background: rgba(255, 255, 255, 0.55);
+        transform: rotate(-8deg);
+      }
+
+      .portfolio-direct-art span {
+        display: inline-block;
+        border: 2px solid rgba(7, 8, 13, 0.35);
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .portfolio-direct-art strong {
+        position: relative;
+        z-index: 1;
+        display: block;
+        max-width: 420px;
+        margin-top: 78px;
+        font-family: "Space Grotesk", Inter, sans-serif;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 0.98;
+      }
+
+      .portfolio-direct-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      .portfolio-direct-copy h3 {
+        margin-bottom: 12px;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+      }
+
+      .portfolio-direct-copy p:not(.eyebrow) {
+        color: rgba(7, 8, 13, 0.62);
+        line-height: 1.75;
+      }
+
+      .portfolio-direct-copy .btn {
+        margin-top: 22px;
+      }
+
       .project {
         overflow: hidden;
         padding: 0;
@@ -685,6 +760,12 @@
         }
       }
 
+      @media (min-width: 860px) {
+        .portfolio-direct {
+          grid-template-columns: 0.95fr 1.05fr;
+        }
+      }
+
       @media (min-width: 980px) {
         .hero-grid {
           grid-template-columns: 1fr 0.78fr;
@@ -771,7 +852,7 @@
           <a href="#portfolio">Portfolio</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
-          <a class="btn btn-small primary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn btn-small primary" href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
         </nav>
       </div>
       <nav class="mobile-menu" id="mobile">
@@ -781,7 +862,7 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
-        <a href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp</a>
       </nav>
     </header>
 
@@ -797,7 +878,7 @@
             </p>
             <div class="actions">
               <a class="btn primary" href="#portfolio">View Portfolio</a>
-              <a class="btn secondary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Contact on WhatsApp</a>
+              <a class="btn secondary" href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Contact on WhatsApp</a>
             </div>
           </div>
           <div class="hero-visual" aria-label="Sak Graphics visual preview">
@@ -862,14 +943,30 @@
         <div class="wrap">
           <div class="header center">
             <p class="eyebrow">Portfolio</p>
-            <h2>Selected work categories with direct Behance access</h2>
+            <h2>See the full Sak Graphics portfolio on Behance</h2>
             <p class="copy">
-              To keep the website fast and easy to maintain, each category links visitors to the full Behance portfolio
-              instead of loading heavy project images on the homepage.
+              For the latest and complete collection of design work, please visit the Sak Graphics Behance portfolio.
+              It is the best place to review logo designs, branding, social media creatives, posters, print artwork,
+              and other visual design projects.
             </p>
           </div>
-          <div class="filters" id="filters" aria-label="Portfolio filters"></div>
-          <div class="portfolio" id="portfolioGrid"></div>
+          <div class="portfolio-direct">
+            <div class="portfolio-direct-art">
+              <span>Behance</span>
+              <strong>Sak Graphics Work Showcase</strong>
+            </div>
+            <div class="portfolio-direct-copy">
+              <p class="eyebrow">Work Samples</p>
+              <h3>Check our latest work in one place</h3>
+              <p>
+                View the complete portfolio on Behance to see the designer's style, project variety, and creative
+                presentation before starting a design project.
+              </p>
+              <a class="btn primary" href="https://www.behance.net/sajidalikhan1" target="_blank" rel="noreferrer">
+                View Behance Portfolio
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -929,12 +1026,12 @@
             <h2>Let's Create Something Creative Together</h2>
             <p class="copy">Have a design requirement? Contact Sak Graphics for logo design, branding, social media creatives, print designs, and more.</p>
             <div class="contact-list">
-              <a href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
+              <a href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
               <a href="mailto:sajid030095@gmail.com">Email: sajid030095@gmail.com</a>
               <span>Location: Muscat, Oman</span>
             </div>
             <div class="actions" style="margin-top: 28px">
-              <a class="btn primary" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+              <a class="btn primary" href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
               <a class="btn secondary" href="mailto:sajid030095@gmail.com">Send Email</a>
               <a class="btn ghost" href="https://www.behance.net/sajidalikhan1" target="_blank" rel="noreferrer">View Behance</a>
             </div>
@@ -967,7 +1064,7 @@
       <div class="wrap footer-row">
         <div><h3>Sak Graphics</h3><p>Your Designing Partner</p></div>
         <div class="footer-links">
-          <a href="https://wa.me/96897202396" target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
+          <a href="https://api.whatsapp.com/send?phone=96897202396" target="_blank" rel="noreferrer">WhatsApp: +968 9720 2396</a>
           <a href="mailto:sajid030095@gmail.com">sajid030095@gmail.com</a>
           <span>Muscat, Oman</span>
           <a href="https://www.behance.net/sajidalikhan1" target="_blank" rel="noreferrer">Behance</a>
@@ -977,10 +1074,9 @@
       <div class="wrap"><p class="copyright">© 2026 Sak Graphics. All rights reserved.</p></div>
     </footer>
 
-    <a class="wa" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer"><span>WA</span>Chat</a>
+    <a class="wa" href="https://api.whatsapp.com/send?phone=96897202396&text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer"><span>WA</span>Chat</a>
 
     <script>
-      const behance = "https://www.behance.net/sajidalikhan1";
       const services = [
         ["LG", "Logo Design", "Unique and professional logos for businesses, startups, and personal brands."],
         ["BI", "Brand Identity Design", "Colors, typography, stationery, and visual direction for a consistent brand style."],
@@ -993,56 +1089,11 @@
         ["TS", "T-Shirt and Merchandise Design", "Creative t-shirt graphics and merchandise artwork for brands and campaigns."],
         ["PR", "Print-Ready Artwork", "Final files prepared with proper size, bleed, color mode, and resolution."]
       ];
-      const items = [
-        ["Logo Design Showcase", "Logo Design", "Explore logo marks and visual identity work on Behance.", "Logo"],
-        ["Brand Identity Layout", "Branding", "Explore brand direction, colors, stationery, and visual system projects.", "Brand"],
-        ["Social Media Campaign", "Social Media", "Explore social media creatives, promotional visuals, and ad layouts.", "Social"],
-        ["Poster Design Collection", "Posters", "Explore event, offer, launch, and campaign poster artwork.", "Poster"],
-        ["Business Card Concepts", "Business Cards", "Explore professional business card and stationery samples.", "Cards"],
-        ["Brochure and Catalogue Layout", "Brochures", "Explore company profile, catalogue, and marketing document layouts.", "Book"],
-        ["Banner and Signage Artwork", "Banners", "Explore shop signs, roll-up banners, and outdoor campaign materials.", "Banner"],
-        ["Packaging and Label Visuals", "Packaging", "Explore product labels, packaging visuals, and display-ready artwork.", "Pack"],
-        ["Merchandise Artwork", "Merchandise", "Explore t-shirt graphics and merchandise artwork.", "Merch"]
-      ];
-      const categories = ["All", "Logo Design", "Branding", "Social Media", "Posters", "Business Cards", "Brochures", "Banners", "Packaging", "Merchandise", "Other Works"];
       const servicesGrid = document.getElementById("servicesGrid");
-      const filters = document.getElementById("filters");
-      const portfolioGrid = document.getElementById("portfolioGrid");
-      let active = "All";
 
       servicesGrid.innerHTML = services
         .map((service) => `<article class="card"><div class="icon">${service[0]}</div><h3>${service[1]}</h3><p>${service[2]}</p></article>`)
         .join("");
-
-      function renderPortfolio() {
-        filters.innerHTML = categories
-          .map((category) => `<button class="${category === active ? "active" : ""}" data-category="${category}">${category}</button>`)
-          .join("");
-
-        const visible = active === "All" ? items : items.filter((item) => item[1] === active);
-        portfolioGrid.innerHTML = visible
-          .map(
-            (item) => `
-              <article class="card project">
-                <a class="portfolio-art" href="${behance}" target="_blank" rel="noreferrer"><span>${item[3]}</span></a>
-                <div class="portfolio-content">
-                  <p>${item[1]}</p>
-                  <h3>${item[0]}</h3>
-                  <span>${item[2]}</span>
-                  <a class="text-link" href="${behance}" target="_blank" rel="noreferrer">View on Behance</a>
-                </div>
-              </article>
-            `
-          )
-          .join("");
-      }
-
-      filters.addEventListener("click", (event) => {
-        const category = event.target.dataset.category;
-        if (!category) return;
-        active = category;
-        renderPortfolio();
-      });
 
       document.getElementById("menu").addEventListener("click", () => {
         document.getElementById("mobile").classList.toggle("open");
@@ -1051,8 +1102,7 @@
       document.getElementById("mobile").addEventListener("click", () => {
         document.getElementById("mobile").classList.remove("open");
       });
-
-      renderPortfolio();
     </script>
   </body>
 </html>
+
