@@ -1053,7 +1053,7 @@
               </select>
             </div>
             <div class="wide"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Tell us about your project"></textarea></div>
-            <p class="note wide">Enquiries are sent to sajid030095@gmail.com. First test submission may ask the email owner to confirm FormSubmit activation.</p>
+            <p class="note wide"><form class="contact-form" onsubmit="sendWhatsAppEnquiry(event, this)">Submit opens WhatsApp with your enquiry ready to send.</p>
             <button class="btn primary wide" type="submit">Submit Message</button>
           </form>
         </div>
@@ -1076,7 +1076,8 @@
 
     <a class="wa" href="https://wa.me/96897202396?text=Hello%20Sak%20Graphics%2C%20I%20would%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer"><span>WA</span>Chat</a>
 
-    <script>
+    <form class="contact-form" onsubmit="sendWhatsAppEnquiry(event, this)">Submit opens WhatsApp with your enquiry ready to send.<form class="contact-form" onsubmit="sendWhatsAppEnquiry(event, this)">Submit opens WhatsApp with your enquiry ready to send.<form class="contact-form" onsubmit="sendWhatsAppEnquiry(event, this)">Submit opens WhatsApp with your enquiry ready to send.<script>      function sendWhatsAppEnquiry(event, form) {        event.preventDefault();        const getValue = (id) => form.querySelector("#" + id)?.value?.trim() || "";        const text = ["Hello Sak Graphics, I would like to discuss a design project.", "", "Name: " + getValue("name"), "Phone / WhatsApp: " + getValue("phone"), "Email: " + getValue("email"), "Service Required: " + getValue("service"), "Message: " + getValue("message")].join("
+");        window.open("https://wa.me/96897202396?text=" + encodeURIComponent(text), "_blank", "noopener");      function sendWhatsAppEnquiry(event, form) {        event.preventDefault();        const getValue = (id) => form.querySelector("#" + id)?.value?.trim() || "";      function sendWhatsAppEnquiry(event, form) {
       const services = [
         ["LG", "Logo Design", "Unique and professional logos for businesses, startups, and personal brands."],
         ["BI", "Brand Identity Design", "Colors, typography, stationery, and visual direction for a consistent brand style."],
